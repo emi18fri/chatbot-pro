@@ -739,6 +739,97 @@ footer p {
 .hero-content { animation: fadeUp 0.8s ease both; }
 .hero-demo { animation: fadeUp 0.8s 0.2s ease both; }
 
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hero {
+    padding: 6rem 1.5rem 3rem;
+    flex-direction: column;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-demo {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .stats {
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  .stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 1.2rem 1rem;
+  }
+  .stat:last-child { border-bottom: none; }
+  .section {
+    padding: 4rem 1.5rem;
+  }
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing {
+    padding: 4rem 1.5rem;
+  }
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .plan.featured {
+    order: -1;
+  }
+  .demo-section {
+    padding: 4rem 1.5rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .demo-window {
+    max-width: 100%;
+    width: 100%;
+  }
+  .testimonials {
+    padding: 4rem 1.5rem;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-section {
+    padding: 5rem 1.5rem;
+  }
+  .contact-section {
+    padding: 4rem 1.5rem;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  footer {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .btn-primary, .btn-secondary {
+    text-align: center;
+  }
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--black); }
@@ -894,17 +985,18 @@ footer p {
     <p style="color: var(--light); font-weight: 300; margin-bottom: 2rem; line-height: 1.7;">
       Testa en liknande chatbot live för ett riktigt företag:
     </p>
-    <a href="https://solid-chat-psi.vercel.app" target="_blank" class="btn-primary">Alviks Bygg demo →</a>
+    <a href="https://lucksta.vercel.app" target="_blank" class="btn-primary" style="margin-right: 1rem;">Lucksta IF demo →</a>
+    <a href="https://solid-chat-opal.vercel.app" target="_blank" class="btn-secondary">Solid Bygg demo →</a>
   </div>
 
   <div class="demo-window">
     <div class="chat-widget">
-      <div class="chat-header" style="background: #eab32a;">
-        <div class="chat-avatar" style="background: rgba(255,255,255,0.2); color: #fff;">AB</div>
-<div class="chat-header-text">
-  <strong style="color: #fff;">Alviks Bygg</strong>
-  <span style="color: rgba(255,255,255,0.8);">Hej! Hur kan jag hjälpa dig? 👋</span>
-</div>
+      <div class="chat-header" style="background: #c0202a;">
+        <div class="chat-avatar" style="background: rgba(255,255,255,0.2); color: #fff;">LIF</div>
+        <div class="chat-header-text">
+          <strong style="color: #fff;">Lucksta IF</strong>
+          <span style="color: rgba(255,255,255,0.8);">Hej! Hur kan jag hjälpa dig? 👋</span>
+        </div>
       </div>
       <div class="chat-messages">
         <div class="chat-msg-bot">Hej! Jag är Lucksta IF:s chattbot. Vad kan jag hjälpa dig med?</div>
@@ -916,7 +1008,7 @@ footer p {
       </div>
       <div class="chat-input-area">
         <input class="chat-input" placeholder="Skriv din fråga..." readonly/>
-        <button class="chat-send" style="background: #eab32a; color: #000;">›</button>
+        <button class="chat-send" style="background: #c0202a; color: #fff;">›</button>
       </div>
     </div>
   </div>
