@@ -327,15 +327,15 @@ footer p { font-size: 0.82rem; color: var(--gray); }
     <p style="color: var(--light); font-weight: 300; margin-bottom: 3rem;">Fyll i formuläret så hör vi av oss inom 24 timmar med en gratis demo anpassad för er hemsida.</p>
     <form action="https://formspree.io/f/mzdwlnrq" method="POST">
       <div class="form-row">
-        <div class="form-group"><label>Ditt namn</label><input type="text" id="namn" placeholder="Förnamn Efternamn" required/></div>
-        <div class="form-group"><label>Företag</label><input type="text" id="foretag" placeholder="Företagsnamn AB" required/></div>
+        <div class="form-group"><label>Ditt namn</label><input type="text" id="namn" name="namn" placeholder="Förnamn Efternamn" required/></div>
+        <div class="form-group"><label>Företag</label><input type="text" id="foretag" name="foretag" placeholder="Företagsnamn AB" required/></div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label>E-post</label><input type="email" id="epost" placeholder="namn@foretag.se" required/></div>
-        <div class="form-group"><label>Telefon</label><input type="tel" id="telefon" placeholder="070-000 00 00"/></div>
+        <div class="form-group"><label>E-post</label><input type="email" id="epost" name="epost" placeholder="namn@foretag.se" required/></div>
+        <div class="form-group"><label>Telefon</label><input type="tel" id="telefon" name="telefon" placeholder="070-000 00 00"/></div>
       </div>
-      <div class="form-group"><label>Er hemsida</label><input type="url" id="hemsida" placeholder="https://www.erhemsida.se"/></div>
-      <div class="form-group"><label>Meddelande (valfritt)</label><textarea id="meddelande" placeholder="Berätta kort om ert företag och vad ni söker..."></textarea></div>
+      <div class="form-group"><label>Er hemsida</label><input type="url" id="hemsida" name="hemsida" placeholder="https://www.erhemsida.se"/></div>
+      <div class="form-group"><label>Meddelande (valfritt)</label><textarea id="meddelande" name="meddelande" placeholder="Berätta kort om ert företag och vad ni söker..."></textarea></div>
       <button type="submit" class="btn-primary" style="width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; padding: 1rem;">Skicka förfrågan →</button>
     </form>
     <div id="form-success" style="display:none; margin-top: 1.5rem; background: rgba(240,192,64,0.1); border: 1px solid rgba(240,192,64,0.3); border-radius: 4px; padding: 1.2rem; color: var(--gold); text-align: center;">
